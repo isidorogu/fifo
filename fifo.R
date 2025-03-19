@@ -146,10 +146,3 @@ stocks_f<-
 return(stocks_f)
 }
 
-aapl<-fifo(stock_db = stocks, year = 2024, symbol = "aapl")
-aamzn<-fifo(stock_db = stocks, year = 2024, symbol = "amzn")
-ivv<-fifo(stock_db = stocks, year = 2024, symbol = "ivv")
-ivw<-fifo(stock_db = stocks, year = 2024, symbol = "ivw")
-nvda<-fifo(stock_db = stocks, year = 2024, symbol = "nvda")
-
-sum(aapl$profit_mxn, na.rm = T)+sum(aamzn$profit_mxn, na.rm = T)+sum(ivv$profit_mxn, na.rm = T)+sum(ivw$profit_mxn, na.rm = T)+sum(nvda$profit_mxn, na.rm = T)
